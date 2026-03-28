@@ -1,0 +1,41 @@
+{
+  "name": "nestjs-mini-uuid",
+  "version": "1.0.0",
+  "description": "Librería ligera de mini UUIDs para NestJS",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean --minify",
+    "dev": "tsup src/index.ts --format cjs,esm --watch --dts"
+  },
+  "keywords": [
+    "nestjs",
+    "uuid",
+    "mini-id"
+  ],
+  "author": "Jose Antonio Becerra Morilla - JoseProgrammer25",
+  "license": "MIT",
+  "peerDependencies": {
+    "@nestjs/common": "^10.0.0 || ^11.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^11.1.17",
+    "@swc/core": "^1.15.21",
+    "@types/node": "^25.5.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,9 @@
+# Dependencias
+node_modules/
+
+# Archivos compilados
+dist/
+
+# Logs y empaquetados de npm
+npm-debug.log*
+*.tgz
