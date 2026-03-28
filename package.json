@@ -27,7 +27,10 @@
   "keywords": [
     "nestjs",
     "uuid",
-    "mini-id"
+    "mini-uuid",
+    "short-id",
+    "generator",
+    "security"
   ],
   "author": "Jose Antonio Becerra Morilla - JoseProgrammer25",
   "license": "MIT",
