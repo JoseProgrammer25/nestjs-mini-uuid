@@ -1,7 +1,11 @@
 {
   "name": "nestjs-mini-uuid",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Librería ligera de mini UUIDs para NestJS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoseProgrammer25/nestjs-mini-uuid"
+  },
   "main": "./dist/index.js",
   "files": [
     "dist"
@@ -17,7 +21,8 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean --minify",
-    "dev": "tsup src/index.ts --format cjs,esm --watch --dts"
+    "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
+    "test": "jest"
   },
   "keywords": [
     "nestjs",
@@ -32,9 +37,12 @@
   "devDependencies": {
     "@nestjs/common": "^11.1.17",
     "@swc/core": "^1.15.21",
+    "@types/jest": "^30.0.0",
     "@types/node": "^25.5.0",
+    "jest": "^30.3.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
+    "ts-jest": "^29.4.6",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   }
