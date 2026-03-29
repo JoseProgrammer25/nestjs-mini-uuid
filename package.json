@@ -4,7 +4,7 @@
   "description": "Librería ligera de mini UUIDs para NestJS",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JoseProgrammer25/nestjs-mini-uuid"
+    "url": "git+https://github.com/JoseProgrammer25/nestjs-mini-uuid.git"
   },
   "main": "./dist/index.js",
   "files": [
