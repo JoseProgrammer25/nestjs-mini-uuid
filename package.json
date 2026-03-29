@@ -1,6 +1,6 @@
 {
   "name": "nestjs-mini-uuid",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Librería ligera de mini UUIDs para NestJS",
   "repository": {
     "type": "git",
