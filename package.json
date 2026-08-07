@@ -1,6 +1,6 @@
 {
   "name": "nestjs-mini-uuid",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Librería ligera de mini UUIDs para NestJS",
   "repository": {
     "type": "git",
@@ -17,11 +17,16 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
+    },
+    "./sequelize": {
+      "types": "./dist/sequelize.d.ts",
+      "import": "./dist/sequelize.mjs",
+      "require": "./dist/sequelize.js"
     }
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean --minify",
-    "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
+    "build": "tsup src/index.ts src/sequelize.ts --format cjs,esm --dts --clean --minify",
+    "dev": "tsup src/index.ts src/sequelize.ts --format cjs,esm --watch --dts",
     "test": "jest"
   },
   "keywords": [
@@ -35,7 +40,17 @@
   "author": "Jose Antonio Becerra Morilla - JoseProgrammer25",
   "license": "MIT",
   "peerDependencies": {
-    "@nestjs/common": "^10.0.0 || ^11.0.0"
+    "@nestjs/common": "^10.0.0 || ^11.0.0",
+    "sequelize": "^6.0.0",
+    "sequelize-typescript": "^2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "sequelize": {
+      "optional": true
+    },
+    "sequelize-typescript": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@nestjs/common": "^11.1.17",
@@ -45,6 +60,9 @@
     "jest": "^30.3.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
+    "sequelize": "^6.37.8",
+    "sequelize-typescript": "^2.1.6",
+    "sqlite3": "^6.0.1",
     "ts-jest": "^29.4.6",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
