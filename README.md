@@ -21,6 +21,15 @@ You can install the library using your favorite package manager:
 npm install nestjs-mini-uuid
 ```
 
+## Compatibility
+
+| Dependency | Supported versions |
+| --- | --- |
+| `@nestjs/common` | `^10.0.0 \|\| ^11.0.0 \|\| ^12.0.0` |
+| `sequelize` (optional) | `^6.0.0` |
+| `sequelize-typescript` (optional) | `^2.0.0` |
+| Node.js | `>= 18` (NestJS 12 requires `>= 20`) |
+
 ## Quick Start
 
 Import the MiniUuidModule into your main module. By using .fortRoot(), the service will be available globally throughout your application.
